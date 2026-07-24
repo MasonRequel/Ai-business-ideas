@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Business Ideas</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Business Ideas Generator</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
-  <h1>💡 AI Business Ideas</h1>
-  <p>Generate profitable app ideas instantly.</p>
+<h1>🚀 AI Business Ideas Generator</h1>
 
-  <button onclick="generateIdea()">Generate Idea</button>
+<p>Describe your skills or interests.</p>
 
-  <div id="result">
-    Click the button to get an idea.
-  </div>
+<textarea id="prompt" rows="5" placeholder="Example: I like football and want to make money online..."></textarea>
+
+<br><br>
+
+<button onclick="generateIdea()">Generate Business Idea</button>
+
+<div id="result">
+Your business idea will appear here.
+</div>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
