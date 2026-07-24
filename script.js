@@ -1,18 +1,14 @@
-const ideas = [
-"AI Resume Builder",
-"AI Meal Planner",
-"AI Study Assistant",
-"AI Invoice Generator",
-"AI Fitness Coach",
-"AI Social Media Caption Generator",
-"AI Budget Planner",
-"AI Homework Helper",
-"AI Travel Planner",
-"AI Business Name Generator"
-];
+function generateIdea() {
+  const prompt = document.getElementById("prompt").value;
+  const result = document.getElementById("result");
 
-function generateIdea(){
-const random = Math.floor(Math.random()*ideas.length);
-document.getElementById("result").innerHTML =
-"<h2>"+ideas[random]+"</h2><p>This idea has strong demand and can be turned into a profitable app.</p>";
+  if (prompt.trim() === "") {
+    result.innerHTML = "Please describe your interests first.";
+    return;
+  }
+
+  result.innerHTML =
+    "<b>Business Idea:</b><br><br>" +
+    "An AI-powered business based on: <b>" + prompt + "</b>.<br><br>" +
+    "This is a placeholder. In the next step we'll connect a real AI model so it generates unique, high-quality business ideas.";
 }
